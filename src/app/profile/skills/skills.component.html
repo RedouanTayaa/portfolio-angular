@@ -1,0 +1,17 @@
+<nb-card accent="info" id="skill">
+  <nb-card-header>
+    Compétences
+  </nb-card-header>
+  <nb-card-body>
+    <div class="skillContainer">
+      <div class="skill" *ngFor="let skill of (skills | async)">
+        <div class="skillName">
+          {{skill.name}}
+        </div>
+        <div class="skillValue">
+          <nb-progress-bar [value]="skill.level * 20" status="info">{{skill.level * 20}} %</nb-progress-bar>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

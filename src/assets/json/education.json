@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2018",
+    "title": "Formation Angular",
+    "city": "Pierrelatte (26)",
+    "schoolName": "Apollo"
+  },
+  {
+    "date": "2016",
+    "title": "Formation Symfony",
+    "city": "Montpellier (34)",
+    "schoolName": "Lexik"
+  },
+  {
+    "date": "2016",
+    "title": "Ingénieur Informatique",
+    "city": "Beauvais (60)",
+    "schoolName": "ITII Picardie / CNAM"
+  },
+  {
+    "date": "2013",
+    "title": "DUT Informatique",
+    "city": "Amiens (80)",
+    "schoolName": "IUT"
+  }
+]

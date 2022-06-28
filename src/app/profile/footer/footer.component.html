@@ -1,0 +1,6 @@
+<p>© All rights reserved.</p>
+<div class="social">
+  <a *ngFor="let social of (socials | async)" [href]="social.link" target="_blank">
+    <button nbButton ghost><nb-icon icon="{{social.icon}}"></nb-icon></button>
+  </a>
+</div>

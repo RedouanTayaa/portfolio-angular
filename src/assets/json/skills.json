@@ -1,0 +1,46 @@
+[
+  {
+    "name": "PHP",
+    "level": 5
+  },
+  {
+    "name": "JS",
+    "level": 5
+  },
+  {
+    "name": "Typescript",
+    "level": 4
+  },
+  {
+    "name": "SQL",
+    "level": 4
+  },
+  {
+    "name": "Symfony",
+    "level": 5
+  },
+  {
+    "name": "AngularJS",
+    "level": 5
+  },
+  {
+    "name": "Angular",
+    "level": 4
+  },
+  {
+    "name": "API REST",
+    "level": 5
+  },
+  {
+    "name": "PhpUnit",
+    "level": 4
+  },
+  {
+    "name": "Karma",
+    "level": 4
+  },
+  {
+    "name": "Git",
+    "level": 4
+  }
+]

@@ -1,0 +1,14 @@
+<nb-card accent="info" id="education">
+  <nb-card-header>
+    Formations
+  </nb-card-header>
+  <nb-card-body>
+    <div class="education" *ngFor="let education of (educations | async)">
+      <div class="educationdate">{{education.date}}</div>
+      <div class="educationdetail">
+        <div>{{education.title}}</div>
+        <div>{{education.schoolName}} - {{education.city}}</div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

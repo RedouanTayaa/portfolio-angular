@@ -1,0 +1,33 @@
+#contactForm {
+  width: 40%;
+}
+
+.formElement {
+  margin-bottom: 2rem;
+}
+
+.submit {
+  text-align: right;
+}
+
+.alert {
+  color: #ff3d71;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.messageSuccess {
+  margin-bottom: 2rem;
+  color: #00d68f;
+}
+
+.messageError {
+  margin-bottom: 2rem;
+  color: #ff3d71;
+}
+
+@media (max-width: 640px) {
+  #contactForm {
+    width: 100%;
+  }
+}

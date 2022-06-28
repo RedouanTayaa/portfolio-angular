@@ -1,0 +1,21 @@
+<div class="hero-image">
+  <div class="hero-text">
+    <div class="avatarContainer">
+      <nb-user size="giant"
+               name="{{(contact | async)?.firstname}} {{(contact | async)?.lastname}}"
+               title="{{(contact | async)?.title}}"
+               [picture]="base64image"
+               onlyPicture>
+      </nb-user>
+    </div>
+    <h1>{{(contact | async)?.firstname}} {{(contact | async)?.lastname}}</h1>
+    <p>{{(contact | async)?.title}}</p>
+    <button nbButton (click)="downloadResume()">Télécharger mon CV</button>
+  </div>
+  <div class="hero-social">
+    <a class="hero-icon" *ngFor="let social of (socials | async)" [href]="social.link" target="_blank">
+      <button nbButton ghost><nb-icon icon="{{social.icon}}"></nb-icon></button>
+    </a>
+  </div>
+
+</div>

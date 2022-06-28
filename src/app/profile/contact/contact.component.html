@@ -1,0 +1,45 @@
+<nb-card accent="info" id="contact" [nbSpinner]="loading" nbSpinnerStatus="danger" nbSpinnerSize="large" nbSpinnerMessage="">
+  <nb-card-header>
+    Contact
+  </nb-card-header>
+  <nb-card-body>
+    <div class="messageSuccess" *ngIf="formState === 'success'">
+      Votre message a bien été envoyé.
+    </div>
+    <div class="messageError" *ngIf="formState === 'error'">
+      Votre message n'a pas été envoyé suite à un problème. Vous pouvez m'envoyer un mail à <a href="mailto:{{(contact | async)?.email}}">{{(contact | async)?.email}}</a>
+    </div>
+    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData?.value)" id="contactForm" *ngIf="!loading">
+      <div class="form-group">
+        <input type="email" name="email" class="formElement" nbInput fullWidth fieldSize="large" placeholder="Email" formControlName="Email">
+        <div *ngIf="FormData.get('Email')?.invalid && FormData.get('Email')?.errors && (FormData.get('Email')?.dirty || FormData.get('Email')?.touched)" class="alert">
+          <div *ngIf="FormData.get('Email')?.hasError('required')">
+            Email est requis.
+          </div>
+          <div *ngIf="FormData.get('Email')?.hasError('email')">
+            Email n'est pas au bon format.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" name="name" class="formElement" nbInput fullWidth fieldSize="large" placeholder="Nom" formControlName="Name">
+        <div *ngIf="FormData.get('Name')?.invalid && FormData.get('Name')?.errors && (FormData.get('Name')?.dirty || FormData.get('Name')?.touched)" class="alert">
+          <div *ngIf="FormData.get('Name')?.hasError('required')">
+            Nom est requis.
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea name="message" class="formElement" nbInput fullWidth placeholder="Message" formControlName="Message"></textarea>
+        <div *ngIf="FormData.get('Message')?.invalid && FormData.get('Message')?.errors && (FormData.get('Message')?.dirty || FormData.get('Message')?.touched)" class="alert">
+          <div *ngIf="FormData.get('Message')?.hasError('required')">
+            Message est requis.
+          </div>
+        </div>
+      </div>
+      <div class="submit">
+        <button nbButton type="submit" [disabled]="!FormData.valid" status="basic">Envoyer</button>
+      </div>
+    </form>
+  </nb-card-body>
+</nb-card>

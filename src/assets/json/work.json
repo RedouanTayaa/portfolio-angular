@@ -1,0 +1,29 @@
+[
+  {
+    "dateStart": "2019",
+    "dateEnd": "En cours",
+    "title": "Développeur Web",
+    "city": "Remote",
+    "company": "MDHC",
+    "description": "Développement d'une plateforme de télésurveillance médicale de suivi de diabète\n\nAPI sous Symfony 4\nFront sous AngularJs avec passage à Angular\nApplication mobile Cordova avec propre plugins Java/Swift",
+    "stack": ["Symfony", "AngularJS", "Angular", "MySQL", "API", "Cordova", "PhpUnit", "Karma", "Jenkins", "Docker"]
+  },
+  {
+    "dateStart": "2019",
+    "dateEnd": "2019",
+    "title": "Développeur Web",
+    "city": "Montélimar (26)",
+    "company": "Otipass",
+    "description": "Développement d'une application web sous Zend \nDéveloppement d'applications mobile Android natif et Ionic",
+    "stack": ["Ionic", "Zend", "AngularJS"]
+  },
+  {
+    "dateStart": "2016",
+    "dateEnd": "2019",
+    "title": "Développeur Web",
+    "city": "Pirrelatte (26)",
+    "company": "Gamma Software",
+    "description": "Intégré dans une équipe chargée du développement d'une application Web d'HSE sous Symfony et Angular",
+    "stack": ["Symfony", "AngularJS", "Angular", "PostgreSQL", "API", "RabbitMQ", "PhpUnit", "Karma", "Jenkins"]
+  }
+]

@@ -1,0 +1,24 @@
+.education {
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: 5rem;
+  grid-gap: 2rem;
+  margin: 2rem;
+}
+
+.educationdate {
+  background-color: #fff;
+  color: #222B45;
+  height: 100%;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.educationdetail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

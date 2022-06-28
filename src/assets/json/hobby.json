@@ -1,0 +1,12 @@
+[
+  {
+    "hobby": "football",
+    "details": "Pratiqué en club",
+    "icon": "chercher icone foot"
+  },
+  {
+    "hobby": "Voyages",
+    "details": "Australie, Maroc, Belqiue, Allemagne, Espagne, Ile Maurice, Turquie",
+    "icon": "chercher icone globe"
+  }
+]

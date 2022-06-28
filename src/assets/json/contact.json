@@ -1,0 +1,13 @@
+{
+  "firstname": "Redouan",
+  "lastname": "Tayaa",
+  "title": "Développeur web Full-stack",
+  "email": "redouan.tayaa@gmail.com",
+  "location": "La Coucourde (26)",
+  "about": [
+    "Développeur web full-stack depuis 7ans",
+    "J'ai travaillé pour différents domaines: sécurité au travail, qualité, santé, tourisme.",
+    "J'ai une expertise en Symfony, AngularJs et Angular.",
+    "Je m'adapte aux équipes et aux technologies/framework/languages rapidement."
+  ]
+}

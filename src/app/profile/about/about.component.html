@@ -1,0 +1,10 @@
+<nb-card accent="info" id="about">
+  <nb-card-header>
+    A propos de moi
+  </nb-card-header>
+  <nb-card-body>
+    <p *ngFor="let about of (contact | async)?.about">
+      {{about}}
+    </p>
+  </nb-card-body>
+</nb-card>

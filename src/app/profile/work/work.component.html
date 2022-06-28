@@ -1,0 +1,21 @@
+<nb-card accent="info" id="experience">
+  <nb-card-header>
+    Expériences
+  </nb-card-header>
+  <nb-card-body>
+    <mgl-timeline [toggle]="true">
+      <mgl-timeline-entry *ngFor="let work of (works | async)">
+        <mgl-timeline-entry-header class="colorback">{{work.title}} - {{work.company}} - {{work.city}}</mgl-timeline-entry-header>
+        <mgl-timeline-entry-content class="formatted colorback">
+          {{work.description}}
+
+          <div>
+            <button nbButton *ngFor="let stack of work.stack" status="info" size="tiny" class="stack">{{stack}}</button>
+          </div>
+        </mgl-timeline-entry-content>
+        <mgl-timeline-entry-dot [size]="30" style="background-color: #0095FF;"></mgl-timeline-entry-dot>
+        <mgl-timeline-entry-side style="top: 50%;">{{work.dateStart}} - {{work.dateEnd}}</mgl-timeline-entry-side>
+      </mgl-timeline-entry>
+    </mgl-timeline>
+  </nb-card-body>
+</nb-card>
